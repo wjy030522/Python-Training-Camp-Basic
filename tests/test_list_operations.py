@@ -20,12 +20,12 @@ def test_student_list_operations():
     result = student_list_operations(initial_list, "add", "赵六")
     assert "赵六" in result
     assert len(result) == 4
-    
+
     # 测试删除学生
     result = student_list_operations(result, "remove", "李四")
     assert "李四" not in result
     assert len(result) == 3
-    
+
     # 测试修改学生
     result = student_list_operations(result, "update", "张三", "张小三")
     assert "张三" not in result
